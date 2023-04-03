@@ -1,0 +1,97 @@
+
+*{
+    box-sizing: border-box; 
+    background-color: var(--col04);
+    padding: 70px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+
+
+  }
+  
+
+  :root{
+      --col01:rgb(0,0,0);
+      --col02:rgb(249, 154, 99);
+      --col03:rgb(233, 209, 224);
+      --col04: rgb(166, 118, 149);
+      --border01: double 10px; 
+      --border02: double 20px; 
+
+  }
+
+
+
+#background {
+
+    display:grid;
+    height: 200vh;
+    margin: 125px;
+    background-color:var(--col04);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    gap: 5px;
+    column-gap: 10px;
+}
+
+.margin {
+    margin: 20px;
+    border-color: black;
+}
+
+#a {
+    background-color: var(--col02);
+    border: var(--border01);
+    grid-row: 1/3;
+}
+
+#b {
+    background-color:  var(--col02);
+    border: var(--border01);
+    grid-row: 2/4;
+}
+
+#c {
+    background-color:  var(--col02);
+    border: var(--border01);
+    grid-row: 1/3;
+}
+
+#d {
+    background-color: var(--col02);
+    border: var(--border01);
+    grid-row: 2/4; 
+}
+
+#e {
+    background-color:  var(--col02);
+    border: var(--border01);
+    grid-row: 1/3;
+}
+
+#f {
+    background-color: var(--col03);
+    border: var(--border02);
+    grid-row: 4/6;
+    grid-column: 1/6;
+}
+
+/* 
+
+
+The reference layout I have chosen to recreate is page 29 from Hedra. Chosen this reference for the simplicity of the layout as stepping stone into experimenting with grid layout in CSS. 
+At first I thought it would be quite difficult however, after attempting to recreate the layout of the reference image I have chosen I now have a better grasp of grid layouts. 
+I first nested the child elements (a,b,c,d,e,f) into a parent div conatiner that I made the same colour as the background colour of the website. I did this to so I can position and align the
+child elements as gruop and to add the padding gaps on the left and right side. This helped me achieve similar scale and ratio of the frames as the reference image. 
+
+Since I did not have a border for the parent div and made it the same colour as the website backgorund I decided to add borders to the child div elements to seperate it from the backgrund. To visually give those boxes some agency. 
+I tried different border styles and thought the solid border styles was too plain, dotted wasn't suitable, and the other 3D styles were too much. I finally decided to use the double border style as it help seperate the boxes from the background without beign to distracting. 
+
+I chose to keep to a very limited colour palette as I knew wanted to use more colours while keeping a more minimal. Purple and orange are my favourite colours but I aslo choose these two colours because 
+they aslo make a good colour combo. I also opted less vibrant and subdued values for a more calm tone and to have unity amongst the webpage layout. 
+
+I used :root for stylistic choices so it will be easier to change a gruop of cosmetic elements such as the five rectangualr panels at the top. For now I want to keep them the same colour and have the same border, therefore if I wish to change to a different colour it would be easier to change these at the root instaed of individually changing it. 
+
+*/
+
