@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 
+
+<!--
+
+Additional Funtion 
+  My decision to add a fullscreen function is based on the video content itself. Since the main content is sound paired
+  with abstract imagery, I imagine users might use this video for background music and visual. For example, if I am
+  in gruop study session and want to put this vieo on the projector screen I would want the ability to make it fullscreen. 
+  By imaging in what scenario a user might engage with this particular media I was able to create a potential funtion 
+  that will inform how a user might interact with the video player. 
+
+CSS chioces:
+  I have changed the fullscreen button to the furthest left of the vidoe control bar. I have chosen to do this
+  because other video players like Youtube, Netflix etc all have the fullscreen button on the bottom right corner. 
+  There is already a standard and expectation of a fullscreen button being of the bottom right corner. Placing it any
+  where else might inturrupt the intuitiveness of the webplayer which is not ideal. The design funtion should fade into 
+  the background of everyday users unless the goal is to draw attention to the standardised placement of functions like
+  the fullscreen button. 
+
+  I have also added a small enlarging animation when hovering over the button  as a way to subtly inform users 
+  of the intercatablility of the button. I have chosen this specific visual signifier because it a representation of 
+  what the button will do/does. It enlarges. Of all the methods I could have chosen this was the most suitable
+-->
+
 <html lang="en">
 
-    <head>
+  <head>
 
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player Experiment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
 
-        <link rel="stylesheet" href="style.css">
+  </head>
 
-        <script src="script.js"></script>
+  <body>
 
-    </head>
+    <!-- this element holds all of the media player -->
+    <div class="video-player-wrapper">
+      <!-- this element holds the video element and the overlay -->
+      <div class="video-element-wrapper">
 
-    <body>
+        <video id="videoElement" controls>
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+        </video>
 
-    </body>
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        
+
+        <button class="video-control-button" id="playButton"></button>
+
+        <button class="video-control-button" id="muteButton"></button>
+
+        <button class="video-control-button" id="fullscreenButton"></button>
+
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+
+      </div>
+
+    </div>
+
+  </body>
 
 </html>
