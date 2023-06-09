@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <html lang="en">
 
@@ -8,11 +7,60 @@
 
         <link rel="stylesheet" href="style.css">
 
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+
+        <title>DOT to DOT</title>
 
     </head>
 
     <body>
+
+      <dialog id="modalDialog">
+
+    
+            <button id="closeModal">Close</button>
+        
+            <p>
+               <h1>Reflection </h1><br>
+
+The idea was to create an interactive website focusing on the words Playful and Feedback. The concept involved creating a digital connect the dots activity where the webpage only starts with one dot on the viewport and as users click on it the next dot will be triggered to appear. This is to indicate that the initial dot has been successfully interacted with and to also prompt users to click on the next dot. <br>
+
+<br>
+
+I did not get very far due to personal issues, but I will go over my main challenges. 
+I was struggling to figure how to get the array to work as I was confusing myself with how the logic of array will work when I apply it my specific project. I even tired drawing it out with pen and paper. When that wasn’t working, I also utilize the help of ChatGPT to see how my idea can be done using another method. However, I also did not get very far with it. 
+In general, I had lots of issues with getting one element to work in tandem with the other aspect. Especially as I was trying to style the position of the button/stars it often interfered with the model pop-up. I was getting more frustrated as I was trying to get the different section to work together smoothly. <br>
+<img class="image" src="./img/Screenshot 2023-06-09 at 16.43.45.png"/>
+<img class="image" src="./img/Screenshot 2023-06-09 at 16.34.52.png"/>
+<img class="image" src="./img/Screenshot 2023-06-09 at 16.35.00.png"/>
+
+<br><br>
+All in all this project did not go as planned. 
+
+            </p>
+
+
+      </dialog>
+
+
+
+        <div id="background">
+
+            <button id="showModal">show some text</button>
+
+          <!--<img class="image" src="./img/bear.jpeg" alt="bear constellation"/>  -->  
+
+            <div class="star">
+
+                <button id="trigger1" onclick="showbutton()">
+                    <img id="star1" src="./img/Blk_Star.png" alt="black star" />
+                    <!-- need to remove the standard css for buttons-->
+                </button>
+
+                <img id="star2" src="./img/Blk_Star.png" alt="black star" />
+                <img id="star3" src="./img/Blk_Star.png" alt="black star" />
+            </div>
+        </div>
 
     </body>
 

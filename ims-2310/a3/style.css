@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  :root{
+    --col01: rgb(0,0,0);
+    --col02: rgb(70, 70, 70);
+    --col03: rgb(183, 183, 183);
+    --col04: rgb(255, 255, 255);
+    --border: solid 20px var(--col02);
+  }
+
+
+/* we can use the ::backdrop pseudo selecter on our dialog element to change the overlay colour */
+
+dialog {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+
+#modalDialog::backdrop{
+    background-color: rgba(173, 255, 165, 0.418);
+
+
+  }
+
+
+#background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.image{
+    max-width: 50%;
+    max-height: 50%;
+    
+}
+
+.star{
+  display: flex;
+  justify-content: center;
+
+}
+
+#star1{
+  width: 200px;
+  height: auto;
+}
+#star2{
+  width: 200px;
+  height: auto;
+}
+#star3{
+  width: 200px;
+  height: auto;
+}
+
